@@ -4,6 +4,9 @@ file = "testSQLDB"
 con = db.connect(file)
 pos = con.cursor()
 
+def someFunc():
+pass
+
 def createTable():
     pos.execute('CREATE TABLE IF NOT EXISTS equipment(id integer, name text, price integer)')
     con.commit()
